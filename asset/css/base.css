@@ -1,0 +1,104 @@
+:root {
+        --primary        : #021A84;
+        --secondary      : #FE4C4C;
+        --text-color     : #171717;
+        --gray           : #999999;
+        --background     : #E5E5E5;
+        --light-gray     : #e5e5e5;
+        --green-gradient : linear-gradient(0deg, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), #2ADA66;
+        border-radius    : 16px;
+        --purple-gradient: linear-gradient(0deg, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), #021A84;
+        border-radius    : 16px;
+        --red-gradient   : linear-gradient(0deg, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), #E5532A;
+        border-radius    : 16px;
+        --green-text     : #2ADA66;
+        --purple-text    : #021A84;
+        --red-text       : #E5532A
+}
+
+html,
+body {
+        font-family: 'Inter', sans-serif;
+        font-size  : 14px;
+        background : var(--background);
+
+}
+
+.wrapper {
+        max-width: 1160px;
+        width    : 100%;
+        margin   : 0 auto;
+}
+
+.container {
+        padding-block: 40px;
+}
+
+.heading {
+        color      : #010d42;
+        font-size  : 34px;
+        font-weight: 700;
+}
+
+/* button-style */
+.btn {
+        height         : 44px;
+        padding        : 8px 16px;
+        min-width      : 149px;
+        display        : flex;
+        align-items    : center;
+        justify-content: center;
+        font-size      : 18px;
+        font-weight    : 500;
+        color          : inherit;
+        user-select    : none;
+        cursor         : pointer;
+        position       : relative;
+        isolation      : isolate;
+        overflow       : hidden;
+}
+
+
+
+.btn--border {
+        border       : 1px solid var(--primary);
+        border-radius: 8px;
+        color        : var(--primary);
+        transition   : linear .2s;
+}
+
+.btn--border:hover {
+        text-decoration: underline;
+}
+
+.btn--fill {
+        /* border: 1px solid var(--primary); */
+        border-radius   : 10px;
+        background-color: var(--primary);
+        border          : none;
+        outline         : none;
+        color           : white;
+}
+
+
+.btn--fill:hover::before {
+        left : auto;
+        right: 0;
+        width: 100%;
+}
+
+.btn--fill::before {
+        content         : "";
+        position        : absolute;
+        left            : 0;
+        right           : auto;
+        top             : 0;
+        height          : 100%;
+        width           : 0;
+        background-color: #fff;
+        opacity         : 0.1;
+        z-index         : -1;
+        transition      : all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+/* button-style */
