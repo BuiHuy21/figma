@@ -1,0 +1,140 @@
+@media all and (max-width: 1200px) {
+        .banner {
+                height: 90vh;
+        }
+
+        .wrapper {
+                padding: 0 15px;
+        }
+}
+
+@media all and (max-width: 1024px) {
+        .banner {
+                height: 90vh;
+        }
+}
+
+@media all and (max-width: 768px) {
+        .banner {
+                height: 70vh;
+        }
+
+        .job-card__list {
+                grid-template-columns: repeat(2, 1fr);
+        }
+
+        .footer__list {
+                display              : grid;
+                grid-template-columns: repeat(3, 1fr);
+
+        }
+
+}
+
+@media all and (max-width: 576px) {
+
+
+        .header-wrapper {
+                flex-direction: column;
+                margin-bottom : 10px;
+        }
+
+        .btn {
+                padding: 4px 10px;
+        }
+
+        .header-nav__link {
+                font-size: 12px;
+        }
+
+
+        .banner {
+                height: 50vh;
+        }
+
+        .job-card__list {
+                display              : grid;
+                grid-template-columns: repeat(1, 1fr);
+
+        }
+
+        .intro-card__list {
+                display              : grid;
+                grid-template-columns: repeat(1, 1fr);
+                gap                  : 32px;
+        }
+
+        .footer__list {
+                display              : grid;
+                grid-template-columns: repeat(2, 1fr);
+
+        }
+
+        .partner__list {
+                grid-template-columns: repeat(2, 1fr);
+        }
+
+        .process-card__list {
+                grid-template-columns: repeat(1, 1fr);
+        }
+
+        .register-wrap {
+                display: none;
+        }
+
+        .form-search {
+                flex-direction: column;
+                gap           : 10px;
+        }
+
+        .form-search button {
+                width: 100%;
+        }
+
+        .form-search__input {
+                width: 100%;
+        }
+
+        .form-search__option {
+                width: 100%;
+        }
+
+        .footer-top {
+                flex-direction: column;
+                gap           : 10px;
+        }
+
+}
+
+@media all and (max-width: 375px) {
+
+
+        .header-wrapper {
+                flex-direction: column;
+        }
+
+        .btn {
+                padding: 4px 15px;
+        }
+
+        .footer-top {
+                display       : flex;
+                align-items   : center;
+                flex-direction: column;
+        }
+
+        .register__right {
+                max-width: 233px;
+                width    : 100%;
+        }
+
+        .footer-top__right {
+                gap: 10px;
+        }
+
+        .footer-top__number {
+                max-height: 20px;
+                max-width : 20px;
+                font-size : 12px;
+        }
+}
